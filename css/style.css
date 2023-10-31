@@ -12,6 +12,10 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
 }
-main{
-    margin: 50px;
+/*Step css without layout*/
+header{
+    text-align: center;
+    margin: 5rem;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
 }
