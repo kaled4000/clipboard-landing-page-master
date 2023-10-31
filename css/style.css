@@ -1,0 +1,17 @@
+:root{
+    /*primary color*/
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral*/
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+main{
+    margin: 50px;
+}
