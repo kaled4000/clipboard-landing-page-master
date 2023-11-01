@@ -6,16 +6,113 @@
     /* Neutral*/
     --Dark-Grayish-Blue: hsl(210, 10%, 33%);
     --Grayish-Blue: hsl(201, 11%, 66%);
+
+    /*button shadow*/
+    --shadwo-ios:hsl(0, 0%, 42%);
+    --shadwo-mac: hsl(204, 75%, 40%);
 }
 
 body{
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    box-sizing: border-box;
 }
-/*Step css without layout*/
+main {
+    margin-top: -5rem;
+}
+
+/*Header Desktop*/
 header{
     text-align: center;
-    margin: 5rem;
     background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10rem;
 }
+header .cont{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont .logo-header{
+    margin-top: 4rem;
+}
+.cont .button{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+header .cont p{
+    color: var(--Grayish-Blue);
+    
+}
+button {
+    border: 0px;
+    margin: 0 6px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+button.ios{
+    background-color: var(--Strong-Cyan);
+}
+button.ios:hover{
+    box-shadow: 0px 5px 0px 0px  var(--shadwo-ios) ;
+}
+button.mac{
+    background-color: var(--Light-Blue);
+}
+button.mac:hover{
+    box-shadow: 0px 5px 0px 0px  var(--shadwo-mac) ;
+}
+/*header mobile*/
+@media (max-width:450px){
+    main{
+        margin-top: -5rem;
+    }
+    header{
+    margin-bottom: 5rem;
+    }
+    header .cont{
+        margin: 1.3rem;
+    }
+    .cont .logo-header{
+        margin-top: 8rem;
+    }
+    .cont .button{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 6rem;
+    }
+}
+/*section 2 and 3*/
+._1 {
+    text-align: center;
+    
+    margin: 6rem;
+}
+section._2 {
+    display: flex;
+    gap: 5rem;
+}
+section._2 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+._2 img{
+    margin-left: -12rem;
+}
+.content p{
+    color: var(--Grayish-Blue);
+}
+
