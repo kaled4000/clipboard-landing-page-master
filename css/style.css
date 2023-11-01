@@ -95,8 +95,8 @@ button.mac:hover{
 /*section 2 and 3*/
 ._1 {
     text-align: center;
-    
-    margin: 6rem;
+    margin: 6rem 25rem;
+    max-width: 680px;
 }
 section._2 {
     display: flex;
@@ -107,6 +107,9 @@ section._2 .content{
     flex-direction: column;
     gap: 5rem;
     justify-content: space-between;
+}
+section._2 .content .item{
+    max-width: 5rem;
 }
 
 ._2 img{
