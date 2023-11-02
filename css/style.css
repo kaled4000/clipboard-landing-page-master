@@ -101,21 +101,115 @@ button.mac:hover{
 section._2 {
     display: flex;
     gap: 5rem;
+    justify-content: flex-start;
+
+}
+section._2 .img{
+    position: relative;
+    right: 15rem;
+    width: 150%;
+    height: 150%;
 }
 section._2 .content{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    justify-content: space-between;
+    gap: 1rem;
+    
 }
 section._2 .content .item{
-    max-width: 5rem;
-}
-
-._2 img{
-    margin-left: -12rem;
+    max-width: 60%;
+    padding: 0px 1rem;
 }
 .content p{
     color: var(--Grayish-Blue);
 }
 
+/*Mobile section _1 and _2*/
+@media (max-width:450px){
+    section._1{
+        margin: 5rem 2rem ;
+    }
+ section._2{
+    flex-direction: column;
+    justify-content: center;
+ }
+ section._2 .imge{
+    display: flex;
+justify-content: center;
+ }
+ section._2 img{
+    width: 70%;
+    height: 70%;
+}
+section._2 .content{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+ 
+main{
+   display: block;
+}
+ section._3{
+    display: none;
+ }
+ .attribution{
+    max-width: 70%;
+ }
+}
+
+/*Section _3*/
+section._3{
+    margin-top: 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+section._3 img{
+    max-width: 900px;
+}
+section._3 p{
+    margin-left: 6rem;
+    max-width: 650px;
+}
+/*Section done*/
+
+/* section _ 3 mobile */
+@media (max-width:450px) {
+    section._3 img{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        max-width: 300px;
+    }
+    section._3{
+        margin: 4rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+    section._3 p{
+       margin: 0;
+    }
+}
+
+/*Section 4*/
+
+section._4{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section._4 .title{
+    text-align: center;
+    margin: 3rem;
+}
+section._4 .title p{
+    color: var(--Grayish-Blue);
+}
+section._4 .content{
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+}
